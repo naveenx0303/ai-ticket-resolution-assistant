@@ -18,7 +18,16 @@ Example Event:
 {
   "ticket_id": 1001,
   "subject": "Unable to login after password reset",
-  "priority": "High"
+  "description": "I reset my password yesterday but I still cannot login. The system says invalid credentials.",
+  "priority": "High",
+  "status": "Open",
+  "customer_email": "customer@example.com",
+  "created_at": "2026-06-10T08:30:00Z",
+  "tags": [
+    "login",
+    "authentication",
+    "password-reset"
+  ]
 }
 ```
 
@@ -41,9 +50,21 @@ Output Example:
 
 ```json
 {
-  "ticketId": 1001,
-  "issue": "Unable to login after password reset",
-  "priority": "High"
+  "ticket_id": 1001,
+  "summary": "Customer cannot access account after password reset. Authentication fails despite using updated credentials.",
+  "root_causes": [
+    "Cached browser credentials",
+    "Account lockout",
+    "Password synchronization delay"
+  ],
+  "recommended_actions": [
+    "Clear browser cache",
+    "Use incognito mode",
+    "Wait 10 minutes after password reset",
+    "Retry login"
+  ],
+  "customer_response": "Thank you for contacting support. We recommend clearing your browser cache and retrying login in an incognito window. If the issue persists, please let us know.",
+  "escalation_required": false
 }
 ```
 
