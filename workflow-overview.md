@@ -226,9 +226,6 @@ Customers receive faster and more accurate responses.
 * AI-powered ticket classification
 * Sentiment analysis
 * SLA prediction
-* Auto-escalation workflows
-* Multilingual support
-* Real-time collaboration integrations
 
 ---
 
