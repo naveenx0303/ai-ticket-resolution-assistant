@@ -1,1 +1,14 @@
-
+{
+  "ticket_id": 1001,
+  "subject": "Unable to login after password reset",
+  "description": "I reset my password yesterday but I still cannot login. The system says invalid credentials.",
+  "priority": "High",
+  "status": "Open",
+  "customer_email": "customer@example.com",
+  "created_at": "2026-06-10T08:30:00Z",
+  "tags": [
+    "login",
+    "authentication",
+    "password-reset"
+  ]
+}
